@@ -9,6 +9,7 @@
     "fable-loader": "^2.1.9",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "upper-case": "^2.0.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
