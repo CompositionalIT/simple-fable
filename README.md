@@ -1,35 +1,22 @@
 # Fable Minimal App
 
-This is a small Fable app project so you can easily get started and add your own code easily in it.
+This is a minimal Fable sample application based off of the [Fable dotnet template](https://github.com/fable-compiler/fable-templates/).
 
-## Requirements
+1. Run the app with `node_modules\.bin\webpack-dev-server`.
 
-* [dotnet SDK](https://www.microsoft.com/net/download/core) 3.0 or higher
-* [node.js](https://nodejs.org) with [npm](https://www.npmjs.com/)
-* An F# editor like Visual Studio, Visual Studio Code with [Ionide](http://ionide.io/) or [JetBrains Rider](https://www.jetbrains.com/rider/).
+## Points of interest
 
-## Building and running the app
+1. Observe the file is normal F#, with modules and open statements.
+2. We can get a reference to a DOM element using standard DOM browser functions. These are simple F# wrappers around the browser.
+3. This includes event handlers.
+4. We can even use `window.alert`!
+5. We can even use some BCL methods that can magically "transpiled" to equivalent JS methods e.g. DateTime.
 
-* Install JS dependencies: `npm install`
-* Install F# dependencies: `npm start`
-* After the first compilation is finished, in your browser open: http://localhost:8080/
+6. We can reference modules of other JS files e.g. NPM packages easily using the `import` function
+7. We can go even lower and use the `Emit` attribute.
+8. Or we can create an interface to match the JS module.
+9. If we're feeling dangerous we can do complete dynamic typing using the `?` operator.
 
-Any modification you do to the F# code will be reflected in the web page after saving.
+> There is a website called TS2Fable which attempts to massage TS definitelytyped interfaces into F#.
 
-## Project structure
-
-### npm
-
-JS dependencies are declared in `package.json`, while `package-lock.json` is a lock file automatically generated.
-
-### Webpack
-
-[Webpack](https://webpack.js.org) is a JS bundler with extensions, like a static dev server that enables hot reloading on code changes. Fable interacts with Webpack through the `fable-loader`. Configuration for Webpack is defined in the `webpack.config.js` file. Note this sample only includes basic Webpack configuration for development mode, if you want to see a more comprehensive configuration check the [Fable webpack-config-template](https://github.com/fable-compiler/webpack-config-template/blob/master/webpack.config.js).
-
-### F#
-
-The sample only contains two F# files: the project (.fsproj) and a source file (.fs) in the `src` folder.
-
-### Web assets
-
-The `index.html` file and other assets like an icon can be found in the `public` folder.
+> See also [here](https://fable.io/fable-doc/communicate/js-from-fable.html) for more details.
