@@ -3,6 +3,7 @@
 This is a minimal Fable sample application based off of the [Fable dotnet template](https://github.com/fable-compiler/fable-templates/).
 
 1. Run `npm install`.
+1. Run `dotnet build src`.
 1. Run the app with `node_modules\.bin\webpack-dev-server`.
 
 ## Points of interest
